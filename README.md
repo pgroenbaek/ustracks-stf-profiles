@@ -2,11 +2,9 @@
 
 This is an attempt to mimic USTracks as best as possible using the Open Rails STF track profile format.
 
-These track profiles enable use of the superelevation feature in Open Rails together with Norbert Rieger's USTracks.
+These track profiles enable use of the super-elevation feature in Open Rails together with Norbert Rieger's USTracks.
 
-If you want to generate track pieces to place within a route these are not for you.
-
-In that case you are much better off using the DPP profiles provided by Norbert with Dynatrax.
+If you wish to replace dynamic tracks within a route and/or generate new track shapes, you should instead use the DPP profiles provided by Norbert with Dynatrax.
 
 
 ## Installation
@@ -15,7 +13,7 @@ TODO how and where to add them
 
 This repository only contains the STF track profiles. The textures needed can be obtained from the [DBTracks package](https://the-train.de/downloads/entry/11252-DBTracks/) (USTracks is included in this).
 
-You more than likely have the textures in your route already if you ever need these profiles for superelevation.
+You more than likely have the textures in your route already if you ever need these profiles for super-elevation.
 
 
 ## Usage
@@ -31,9 +29,14 @@ The plan is to add STF profiles for all USTracks variants.
 
 | USTracks package  | Variants to do                                   | Variants done |
 |-------------------|--------------------------------------------------|---------------|
-| US1               |              |            |
-| US2              |                |           |
-| US3              |                               |               |
+| US1               | US1b, US1h, US1he             | US1           |
+| US2              | US2, US2b, US2h, US2he               |           |
+| US3              | US3, US3b, US3h, US3he, US3r, US3rb, US3rh, US3rhe                              |               |
+
+
+
+
+
 
 Feel free to suggest more by creating an issue, or by submitting a pull request if you want more added.
 
@@ -46,7 +49,7 @@ Feel free to suggest more by creating an issue, or by submitting a pull request 
 
 ## License
 
-These STF track profiles were created by Peter Grønbæk Andersen based on Norbert Rieger's work and are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+These STF track profiles were created by Peter Grønbæk Andersen based on Norbert Rieger's work on USTracks and are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 
 ## Acknowledgements
