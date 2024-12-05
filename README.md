@@ -45,9 +45,9 @@ The plan is to add STF profiles for all USTracks variants.
 
 | USTracks package  | Variants to do                                   | Variants done |
 |-------------------|--------------------------------------------------|---------------|
-| US1               | US1h, US1he             | US1, US1b           |
-| US2              | US2h, US2he               | US2, US2b          |
-| US3              | US3h, US3he, US3rh, US3rhe                              | US3, US3b, US3r, US3rb              |
+| US1               | US1he             | US1, US1b, US1h           |
+| US2              | US2he               | US2, US2b, US2h          |
+| US3              | US3he, US3rhe                              | US3, US3b, US3h, US3r, US3rb, US3rh              |
 
 
 
