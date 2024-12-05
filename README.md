@@ -1,34 +1,24 @@
 # USTracks STF Profiles
 
-These STF track profiles mimic USTracks as best as possible to enable use of the super-elevation feature in Open Rails with Norbert Rieger's USTracks.
+These track profiles mimic USTracks as best as possible to allow use of the super-elevation feature in Open Rails with Norbert Rieger's USTracks.
 
 If you wish to replace dynamic tracks within a route and/or generate new track shapes, you should instead use the DPP profiles provided by Norbert with Dynatrax.
 
 
 ## Installation
-This repository only contains the STF track profiles. The textures can be obtained from the [USTracks package](https://the-train.de/downloads/entry/11252-USTracks/).
+This repository only contains the STF track profiles. The textures for USTracks can be obtained from the [DBTracks package](https://the-train.de/downloads/entry/11252-dbtracks/).
 
-If you ever need these profiles for super-elevation you most likely have the textures in the route already.
+The textures required most likely are in the route already if you ever need these profiles for super-elevation.
 
-
-### Open Rails _1.5.1_ (stable version):
-1. Download the .stf file for the track profile you want from [./TrackProfiles](./TrackProfiles).
-
-2. Place the profile into the `<route folder>/TrackProfiles` folder and rename it to `TrProfile.stf`.
-
-Open Rails will now generate super-elevated track in curves based on this profile. If you have super-elevation enabled in the settings 
-
-The stable version of Open Rails 1.5.1 only supports using one track profile for super-elevation.
-
-Use of multiple profiles is supported from testing version _T1.5.1-1390_ onwards (see below).
+**Use of multiple profiles is only supported from testing version _T1.5.1-1390_ onwards.**
 
 
-### Open Rails _T1.5.1-1390 onwards_ (testing version):
+### Open Rails _T1.5.1-1390_ onwards (testing version):
 1. Download all the .stf files from [./TrackProfiles](./TrackProfiles) as a zip file.
 
 2. Place all of them into the `<route folder>/TrackProfiles` folder.
 
-Open Rails will now select track profile automatically based on the USTracks types used in the route.
+Open Rails will now select track profile automatically based on the type of USTracks used in the route.
 
 TODO about Dynatrax generated dyntrack replacements
 
@@ -39,9 +29,7 @@ A more detailed guide on how to use these track profiles is available in the [Op
 More information about the technical aspects of STF track profiles in Open Rails is available in [this document](https://static.openrails.org/files/OpenRails-Testing-How%20to%20Provide%20Track%20Profiles%20for%20Open%20Rails%20Dynamic%20Track.pdf).
 
 
-## Roadmap
-
-The plan is to add STF profiles for all USTracks variants.
+## Track Variants
 
 | USTracks package  | Variants to do                                   | Variants done |
 |-------------------|--------------------------------------------------|---------------|
