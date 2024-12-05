@@ -6,11 +6,11 @@ If you wish to replace dynamic tracks within a route and/or generate new track s
 
 
 ## Installation
-This repository only contains the STF track profiles. The textures for USTracks can be obtained from the [DBTracks package](https://the-train.de/downloads/entry/11252-dbtracks/).
+This repository only contains the track profiles. The textures for USTracks can be obtained from the [DBTracks package](https://the-train.de/downloads/entry/11252-dbtracks/).
 
 If you ever need these profiles for super-elevation the textures required most likely are in your route already.
 
-Use of multiple profiles is **only supported from testing version _T1.5.1-1390_ onwards.**
+**NOTE:** Use of multiple profiles is only supported from testing version _T1.5.1-1390_ onwards.
 
 
 ### Open Rails _T1.5.1-1390_ onwards (testing version):
