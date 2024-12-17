@@ -32,7 +32,7 @@ Per default dynatrax generated tracks sections are not super-elevated properly u
 
 This can be very time-consuming to create by hand if there are many Dynatrax generated track sections in the route.
 
-A fast way to create the extra tsection.dat for your route is using this [python script](https://github.com/pgroenbaek/openrails-route-dk24/blob/master/UTILS/generate_custom_route_tsection.py). It will look through the world files and your local tsection.dat, and then create the extension tsection.dat with all the extra entries needed. The script needs to be configured with the correct paths but otherwise it is capable of creating the file for any route.
+A fast way to create the extra tsection.dat for your route is using this [python script](https://github.com/pgroenbaek/ustracks-stf-profiles/blob/master/Scripts/generate_route_tsection.py). It will look through the world files and your local tsection.dat, and then create the extension tsection.dat with all the extra entries needed. The script needs to be configured with the correct paths but otherwise it is capable of creating the file for any route.
 
 To use a specific track variant for a Dynatrax generated track section you can rename the shape file name to include the USTracks prefix. For example from `Dynatrax-40892.s` to `US3r_Dynatrax-40892.s`.
 
