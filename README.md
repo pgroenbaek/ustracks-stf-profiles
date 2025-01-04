@@ -36,6 +36,7 @@ A fast way to create the extra tsection.dat for your route is using this [python
 
 To use a specific track variant for a Dynatrax generated track section you can rename the shape file name to include the USTracks prefix. For example from `Dynatrax-40892.s` to `US3r_Dynatrax-40892.s`.
 
+You can also make all Dynatrax track shapes use a profile by default by adding `Dynatrax-*` to the `IncludeShapes` parameter within one of the profiles. For example from `IncludedShapes ( "US3r_*" )` to `IncludedShapes ( "US3r_*, Dynatrax-*" )`. If you want some of the Dynatrax shapes to use a different profile than the default one, you can still rename those Dynatrax shapes with the USTracks prefixes like discussed above.
 
 ### Further documentation:
 More details on how to use these track profiles is available in the [Open Rails documentation](https://open-rails.readthedocs.io/en/latest/options.html#superelevation). 
