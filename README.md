@@ -25,20 +25,12 @@ Open Rails will now automatically generate super-elevated track based on the typ
 ## Usage
 The profiles are already configured to match USTracks variant based on the `US` prefixes of the shape file names.
 
-If you have track shapes named anything else, additional match conditions can be added using the `IncludeShapes` parameter within each track profile file. You can also use the `ExcludedShapes` parameter if necessary.
+If you have track shapes named anything else, additional match conditions can be added using the `IncludedShapes` parameter within each track profile file. You can also use the `ExcludedShapes` parameter if necessary.
 
 ### About Dynatrax generated track sections:
-Per default dynatrax generated tracks sections are not super-elevated properly unless additional TrackSection and TrackShape entries are added to the tsection.dat. The best way to do this is using a [route-specific tsection.dat extension](https://open-rails.readthedocs.io/en/latest/features-route.html#route-specific-tracksections-and-trackshapes).
+You can make all Dynatrax track shapes use a profile by default by adding `Dynatrax-*` to the `IncludedShapes` parameter within one of the profiles. For example `IncludedShapes ( "US2h_*, Dynatrax-*" )`.
 
-This can be very time-consuming to create by hand if there are many Dynatrax generated track sections in the route.
-
-A fast way to create the extra tsection.dat for your route is using this [python script](https://github.com/pgroenbaek/ustracks-stf-profiles/blob/master/Scripts/generate_route_tsection.py). It will look through the world files and your local tsection.dat, and then create the extension tsection.dat with all the extra entries needed. The script needs to be configured with the correct paths but otherwise it is capable of creating the file for any route.
-
-To use a specific track variant for a Dynatrax generated track section you can rename the shape file name to include the USTracks prefix. For example from `Dynatrax-40892.s` to `US3r_Dynatrax-40892.s`.
-
-You can also make all Dynatrax track shapes use a profile by default by adding `Dynatrax-*` to the `IncludeShapes` parameter within one of the profiles. For example `IncludedShapes ( "US3r_*, Dynatrax-*" )`.
-
-If you want some of the Dynatrax shapes to use a different profile than the default one, you can still rename those Dynatrax shapes with the USTracks prefixes like discussed above.
+If there are Dynatrax track shapes that you want to other track variants for, you can rename the shape file names to include the DBTracks prefix. For example from `Dynatrax-40892.s` to `US2h_Dynatrax-40892.s`.
 
 ### Further documentation:
 More details on how to use these track profiles is available in the [Open Rails documentation](https://open-rails.readthedocs.io/en/latest/options.html#superelevation). 
