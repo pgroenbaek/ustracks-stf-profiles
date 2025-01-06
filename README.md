@@ -54,7 +54,6 @@ If anything is missing, feel free to suggest more by creating an issue.
 
 - There is no good way to place objects at an interval along the generated track with STF profiles. For example the following is missing from super-elevated track:
 	- Connectors between the rails in the US3r variants.
-- Dynatrax generated track sections are not super-elevated properly unless you add additional TrackSection and TrackShape entries to tsection.dat. How to do this is discussed in the [Usage section](#about-dynatrax-generated-track-sections).
 
 Create an issue or pull request if you find more.
 
