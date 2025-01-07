@@ -5,9 +5,7 @@ If you wish to replace dynamic tracks within a route and/or generate new track s
 
 
 ## Installation
-This repository only contains the track profiles. The textures for USTracks can be obtained from the [DBTracks package](https://the-train.de/downloads/entry/11252-dbtracks/).
-
-If you ever need these profiles for super-elevation the textures most likely are in the route already.
+This repository only contains the track profiles. The textures for USTracks can be obtained from the [DBTracks package](https://the-train.de/downloads/entry/11252-dbtracks/). You most likely have the textures already if you need these profiles for super-elevation.
 
 **NOTE:** Use of multiple profiles is only supported from testing version _T1.5.1-1390_ onwards.
 
@@ -28,9 +26,9 @@ The profiles are already configured to match USTracks variant based on the `US` 
 If you have track shapes named anything else, additional match conditions can be added using the `IncludedShapes` parameter within each track profile file. You can also use the `ExcludedShapes` parameter if necessary.
 
 ### About Dynatrax generated track sections:
-You can make all Dynatrax track shapes use a profile by default by adding `Dynatrax-*` to the `IncludedShapes` parameter within one of the profiles. For example `IncludedShapes ( "US2h_*, Dynatrax-*" )`.
+You can make all Dynatrax track shapes use a profile by default by adding `Dynatrax-*` to the `IncludedShapes` parameter within one of the profiles. For example `IncludedShapes ( "US2_*, Dynatrax-*" )`.
 
-If there are Dynatrax track shapes that you want to other track variants for, you can rename the shape file names to include the DBTracks prefix. For example from `Dynatrax-40892.s` to `US2h_Dynatrax-40892.s`.
+If there are Dynatrax track shapes that you want to use other track variants for, you can rename the shape file names to include the USTracks prefix. For example from `Dynatrax-40892.s` to `US2h_Dynatrax-40892.s`.
 
 ### Further documentation:
 More details on how to use these track profiles is available in the [Open Rails documentation](https://open-rails.readthedocs.io/en/latest/options.html#superelevation). 
@@ -55,7 +53,7 @@ If anything is missing, feel free to suggest more by creating an issue.
 - There is no good way to place objects at an interval along the generated track with STF profiles. For example the following is missing from super-elevated track:
 	- Connectors between the rails in the US3r variants.
 
-Create an issue or pull request if you find more.
+Feel free to create an issue if you find more.
 
 
 ## License
