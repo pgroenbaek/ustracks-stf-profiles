@@ -9,10 +9,10 @@ This repository only contains the track profiles. The textures for USTracks can 
 
 If you ever need these profiles for super-elevation the textures most likely are in the route already.
 
-**NOTE:** Use of multiple profiles is only supported from testing version _T1.5.1-1390_ onwards.
+**NOTE:** Use of multiple profiles is only supported from testing version _T1.5.1-1390_ or _NYMG rev. 160.2_ onwards.
 
 
-### Open Rails testing version _T1.5.1-1390_ onwards:
+### Steps to install:
 1. Download and extract the [latest release](https://github.com/pgroenbaek/ustracks-stf-profiles/releases).
 
 2. Copy all the track profiles from the `TrackProfiles` folder.
@@ -28,17 +28,11 @@ The profiles are already configured to match USTracks variant based on the `US` 
 If you have track shapes named anything else, additional match conditions can be added using the `IncludeShapes` parameter within each track profile file. You can also use the `ExcludedShapes` parameter if necessary.
 
 ### About Dynatrax generated track sections:
-Per default dynatrax generated tracks sections are not super-elevated properly unless additional TrackSection and TrackShape entries are added to the tsection.dat. The best way to do this is using a [route-specific tsection.dat extension](https://open-rails.readthedocs.io/en/latest/features-route.html#route-specific-tracksections-and-trackshapes).
+You can make all Dynatrax track shapes use a profile by default by adding `Dynatrax-*` to the `IncludedShapes` parameter within one of the profiles. For example `IncludedShapes ( "US2h_*, Dynatrax-*" )`.
 
-This can be very time-consuming to create by hand if there are many Dynatrax generated track sections in the route.
+If there are Dynatrax track shapes that you want to use other track variants for, you can then rename the shape file names to include the DBTracks prefix. For example from `Dynatrax-40892.s` to `US3rh_Dynatrax-40892.s`.
 
-A fast way to create the extra tsection.dat for your route is using this [python script](https://github.com/pgroenbaek/ustracks-stf-profiles/blob/master/Scripts/generate_route_tsection.py). It will look through the world files and your local tsection.dat, and then create the extension tsection.dat with all the extra entries needed. The script needs to be configured with the correct paths but otherwise it is capable of creating the file for any route.
-
-To use a specific track variant for a Dynatrax generated track section you can rename the shape file name to include the USTracks prefix. For example from `Dynatrax-40892.s` to `US3r_Dynatrax-40892.s`.
-
-You can also make all Dynatrax track shapes use a profile by default by adding `Dynatrax-*` to the `IncludeShapes` parameter within one of the profiles. For example `IncludedShapes ( "US3r_*, Dynatrax-*" )`.
-
-If you want some of the Dynatrax shapes to use a different profile than the default one, you can still rename those Dynatrax shapes with the USTracks prefixes like discussed above.
+As with previous versions of Open Rails you can also copy/paste a profile and rename it `TrProfile.stf` to use it for regular dyntrack.
 
 ### Further documentation:
 More details on how to use these track profiles is available in the [Open Rails documentation](https://open-rails.readthedocs.io/en/latest/options.html#superelevation). 
@@ -79,3 +73,9 @@ The profiles are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/li
 In memory of Norbert Rieger.
 
 All credit goes to Norbert as he is the author of the original USTracks shapes.
+
+Thanks to [sim-al2](https://www.trainsim.com/forums/member/179636-sim-al2) for pointing out that PositionControl exists and contributing the configuration of it.
+
+
+## Screenshots
+
