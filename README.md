@@ -76,3 +76,5 @@ Thanks to [sim-al2](https://www.trainsim.com/forums/member/179636-sim-al2) for p
 
 ## Screenshots
 
+![./Screenshots/US1he.png](./Screenshots/US1he.png)
+![./Screenshots/US3rhe.png](./Screenshots/US3rhe.png)
