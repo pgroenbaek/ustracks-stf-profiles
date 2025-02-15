@@ -5,7 +5,7 @@ If you wish to replace dynamic tracks within a route and/or generate new track s
 
 
 ## Installation
-This repository only contains the track profiles. The textures for USTracks can be obtained from the [DBTracks package](https://the-train.de/downloads/entry/11252-dbtracks/). You most likely have the textures already if you need these profiles for super-elevation.
+This repository only contains the track profiles. The textures for USTracks can be obtained from the [USTracks package](https://dbtracks.com/pages/DownloadUSTracks.html). You most likely have the textures already if you need these profiles for super-elevation.
 
 **NOTE:** Use of multiple profiles is only supported from testing version _T1.5.1-1390_ or _NYMG rev. 160.2_ onwards.
 
